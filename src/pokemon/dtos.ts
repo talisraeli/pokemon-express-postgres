@@ -1,4 +1,4 @@
-interface PokemonInsertDto {
+export interface PokemonInsertDto {
   name: string;
   electricity?: number;
   water?: number;

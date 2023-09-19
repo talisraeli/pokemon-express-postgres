@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import db from '../../db';
 import queries from './queries';
 import abilities from './abilities';
+import { PokemonInsertDto } from './dtos';
 
 /**
  * Gets all Pokemon.
@@ -19,7 +20,7 @@ export const getAll = (req: Request, res: Response) => {
 };
 
 /**
- * Inserts new Pokemon with thier abilities.
+ * Inserts new Pokemon with their abilities.
  */
 export const insert = (req: Request, res: Response) => {
   const reqBody = req.body as PokemonInsertDto[];
